@@ -6,7 +6,8 @@
     "outDir": "dist",
     "rootDir": "src",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": ["node", "express", "cors", "cookie-parser"]
   },
   "include": ["src"],
   "references": [
