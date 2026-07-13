@@ -32,7 +32,7 @@ const destinations = [
 
 export function Destinations() {
   return (
-    <section id="destinations" className="py-32 px-4 md:px-8 max-w-7xl mx-auto">
+    <section id="destinations" className="py-32 px-4 md:px-8 bg-white rounded-[48px] max-w-7xl mx-auto mt-20">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ export function Destinations() {
             Sanctuaries of immense beauty and absolute privacy, hand-selected for our members.
           </p>
         </div>
-        <button className="text-sm font-medium uppercase tracking-[0.1em] text-primary hover:text-accent transition-colors pb-1 border-b border-primary/20 hover:border-accent">
+        <button className="text-sm font-semibold uppercase tracking-[0.1em] text-primary hover:text-accent transition-colors pb-1 border-b border-primary/20 hover:border-accent">
           View All Destinations
         </button>
       </motion.div>
@@ -59,7 +59,7 @@ export function Destinations() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ delay: i * 0.15, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="group relative w-full aspect-[4/5] rounded-[36px] overflow-hidden cursor-pointer shadow-[0_8px_32px_rgba(0,0,0,0.03)] hover:shadow-[0_24px_48px_rgba(0,0,0,0.08)] transition-all duration-700 hover:-translate-y-2"
+            className="group relative w-full aspect-[4/5] rounded-[36px] overflow-hidden cursor-pointer premium-shadow hover:-translate-y-2 transition-all duration-700"
           >
             <div className="absolute inset-0 bg-black/10 z-10 group-hover:bg-black/0 transition-colors duration-700" />
             <img 
@@ -69,12 +69,12 @@ export function Destinations() {
             />
             
             <div className="absolute bottom-6 left-6 right-6 z-20">
-              <div className="bg-white/70 backdrop-blur-xl border border-white/40 rounded-[24px] p-6 shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+              <div className="glass-panel p-6 shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                 <div className="flex justify-between items-start mb-1">
                   <h3 className="font-serif text-2xl text-primary">{dest.title}</h3>
-                  <span className="text-xs font-medium bg-white px-2 py-1 rounded-full shadow-sm">★ {dest.rating}</span>
+                  <span className="text-xs font-semibold bg-white px-2 py-1 rounded-full shadow-sm text-primary">★ {dest.rating}</span>
                 </div>
-                <p className="text-sm text-muted-foreground mb-4 font-light">{dest.location}</p>
+                <p className="text-sm text-secondary mb-4 font-light">{dest.location}</p>
                 
                 <div className="flex justify-between items-center pt-4 border-t border-black/5">
                   <span className="text-sm font-medium text-primary">{dest.price}</span>

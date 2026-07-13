@@ -32,7 +32,7 @@ const tiers = [
 
 export function Memberships() {
   return (
-    <section id="membership" className="py-32 px-4 md:px-8 max-w-6xl mx-auto">
+    <section id="membership" className="py-32 px-4 md:px-8 max-w-6xl mx-auto luxury-gradient-bg rounded-[48px] my-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -55,14 +55,14 @@ export function Memberships() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.2, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className={`relative p-10 md:p-14 rounded-[40px] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_24px_48px_rgba(0,0,0,0.06)] ${
+            className={`relative p-10 md:p-14 rounded-[32px] transition-all duration-500 hover:-translate-y-2 premium-shadow ${
               tier.highlight 
                 ? 'bg-primary text-white shadow-xl' 
                 : 'glass-panel bg-white'
             }`}
           >
             {tier.highlight && (
-              <div className="absolute inset-0 rounded-[40px] border-[0.5px] border-[#C7A45D]/40 pointer-events-none" />
+              <div className="absolute inset-0 rounded-[32px] border-[0.5px] border-[#C8A96A]/40 pointer-events-none" />
             )}
             
             <h3 className={`font-serif text-3xl mb-2 ${tier.highlight ? 'gold-gradient-text' : 'text-primary'}`}>
@@ -73,23 +73,23 @@ export function Memberships() {
               <span className={`text-sm ${tier.highlight ? 'text-white/60' : 'text-muted-foreground'}`}>/ {tier.frequency}</span>
             </div>
             
-            <p className={`text-sm font-light leading-relaxed mb-10 ${tier.highlight ? 'text-white/80' : 'text-muted-foreground'}`}>
+            <p className={`text-sm font-light leading-relaxed mb-10 ${tier.highlight ? 'text-white/80' : 'text-secondary'}`}>
               {tier.description}
             </p>
 
             <ul className="space-y-4 mb-12">
               {tier.features.map((feat, j) => (
                 <li key={j} className="flex items-start gap-3">
-                  <span className={`mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full ${tier.highlight ? 'bg-[#C7A45D]' : 'bg-primary'}`} />
+                  <span className={`mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full ${tier.highlight ? 'bg-[#C8A96A]' : 'bg-primary'}`} />
                   <span className={`text-sm ${tier.highlight ? 'text-white/90' : 'text-foreground/80'}`}>{feat}</span>
                 </li>
               ))}
             </ul>
 
-            <button className={`w-full py-4 rounded-full text-sm font-medium tracking-wide transition-all duration-300 hover:scale-105 ${
+            <button className={`w-full py-[18px] rounded-full text-sm font-semibold tracking-wide transition-all duration-300 hover:scale-105 ${
               tier.highlight 
-                ? 'bg-[#C7A45D] text-white shadow-[0_4px_14px_rgba(199,164,93,0.3)]' 
-                : 'bg-muted text-primary hover:bg-black/5'
+                ? 'bg-[linear-gradient(135deg,#D9C49A,#C8A96A,#B88A2F)] text-white shadow-[0_20px_50px_rgba(184,138,47,0.30)] hover:bg-[linear-gradient(135deg,#C8A96A,#B88A2F,#9E7420)]' 
+                : 'bg-muted text-primary hover:bg-[#EAE6DF]'
             }`}>
               Request Invitation
             </button>

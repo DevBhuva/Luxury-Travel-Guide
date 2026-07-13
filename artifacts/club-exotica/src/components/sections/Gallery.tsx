@@ -13,18 +13,18 @@ const images = [
 
 export function Gallery() {
   return (
-    <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
+    <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto bg-white rounded-[48px] my-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="mb-16"
+        className="mb-16 text-center"
       >
         <h2 className="font-serif text-4xl text-primary">Moments</h2>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-3 gap-4 md:gap-6 md:h-[800px]">
+      <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-3 gap-4 md:gap-6 md:h-[800px] px-4 md:px-10 pb-10">
         {images.map((img, i) => (
           <motion.div
             key={i}
@@ -32,7 +32,7 @@ export function Gallery() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ delay: i * 0.15, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className={`group relative rounded-[28px] overflow-hidden ${img.span}`}
+            className={`group relative rounded-[36px] overflow-hidden premium-shadow ${img.span}`}
           >
             <img 
               src={img.src} 

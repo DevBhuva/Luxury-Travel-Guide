@@ -26,7 +26,7 @@ const stories = [
 
 export function Experiences() {
   return (
-    <section id="experiences" className="py-32 px-4 md:px-8 max-w-7xl mx-auto">
+    <section id="experiences" className="py-32 px-4 md:px-8 bg-muted max-w-7xl mx-auto rounded-[48px] my-10">
       <div className="mb-24 text-center">
         <h2 className="font-serif text-4xl md:text-6xl text-primary mb-6">Curated Escapes</h2>
         <p className="text-muted-foreground font-light tracking-wide max-w-xl mx-auto">
@@ -45,7 +45,7 @@ export function Experiences() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                className="w-full md:w-3/5 rounded-[40px] overflow-hidden shadow-[0_24px_48px_rgba(0,0,0,0.06)] aspect-[4/3] md:aspect-auto md:h-[600px]"
+                className="w-full md:w-3/5 rounded-[36px] overflow-hidden premium-shadow aspect-[4/3] md:aspect-auto md:h-[600px]"
               >
                 <img 
                   src={story.image} 
@@ -67,10 +67,10 @@ export function Experiences() {
                 <h3 className="font-serif text-3xl md:text-5xl text-primary mb-6 leading-tight">
                   {story.title}
                 </h3>
-                <p className="text-muted-foreground font-light leading-relaxed mb-8">
+                <p className="text-secondary font-light leading-relaxed mb-8">
                   {story.text}
                 </p>
-                <button className="flex items-center gap-3 text-sm font-medium uppercase tracking-[0.1em] text-primary hover:text-accent transition-colors group">
+                <button className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.1em] text-primary hover:text-accent transition-colors group">
                   Discover
                   <span className="w-8 h-[1px] bg-primary group-hover:bg-accent group-hover:w-12 transition-all duration-300 block" />
                 </button>

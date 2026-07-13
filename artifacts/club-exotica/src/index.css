@@ -6,46 +6,44 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: hsl(var(--background));
-  --color-foreground: hsl(var(--foreground));
-  --color-border: hsl(var(--border));
+  --color-background: var(--background);
+  --color-foreground: var(--primary-text);
+  --color-border: var(--border-light);
   
-  --color-card: hsl(var(--card));
-  --color-card-foreground: hsl(var(--card-foreground));
-  --color-card-border: hsl(var(--card-border));
+  --color-card: var(--pure-white);
+  --color-card-foreground: var(--primary-text);
+  --color-card-border: var(--border-light);
   
-  --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary: var(--primary-text);
+  --color-primary-foreground: var(--pure-white);
+
+  --color-secondary: var(--secondary-text);
+  --color-secondary-foreground: var(--pure-white);
   
-  --color-muted: hsl(var(--muted));
-  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-muted: var(--soft-ivory);
+  --color-muted-foreground: var(--muted-text);
   
-  --color-accent: hsl(var(--accent));
-  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-accent: var(--luxury-gold);
+  --color-accent-foreground: var(--pure-white);
 
   --font-sans: var(--app-font-sans);
   --font-serif: var(--app-font-serif);
 }
 
 :root {
-  /* Apple-inspired Color Palette */
-  --background: 240 14% 96%; /* #F5F5F7 */
-  --foreground: 240 3% 12%; /* #1D1D1F */
-  
-  --card: 0 0% 100%; /* #FFFFFF */
-  --card-foreground: 240 3% 12%; 
-  --card-border: 240 10% 92%; /* #E8E8ED */
-  
-  --primary: 240 3% 12%; /* #1D1D1F */
-  --primary-foreground: 0 0% 100%;
-  
-  --muted: 33 41% 95%; /* #F7F3EE Warm Beige */
-  --muted-foreground: 240 2% 45%; 
-  
-  --accent: 40 48% 57%; /* #C7A45D Luxury Gold */
-  --accent-foreground: 0 0% 100%;
-
-  --border: 240 10% 92%; 
+  --background: #FAF9F6;
+  --pure-white: #FFFFFF;
+  --luxury-gold: #C8A96A;
+  --royal-gold: #B88A2F;
+  --champagne-gold: #D9C49A;
+  --soft-ivory: #F8F6F2;
+  --primary-text: #1A1A1A;
+  --secondary-text: #5C5C5C;
+  --muted-text: #8A8A8A;
+  --border-light: #EAE6DF;
+  --border-gold: #E3D2A5;
+  --gold-hover: #A8791F;
+  --button-hover: #9E7420;
 
   --app-font-sans: 'Plus Jakarta Sans', sans-serif;
   --app-font-serif: 'Playfair Display', serif;
@@ -60,7 +58,6 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
   
-  /* Smooth scrolling for the whole page */
   html {
     scroll-behavior: smooth;
   }
@@ -68,14 +65,39 @@
 
 @layer utilities {
   .glass-panel {
-    @apply bg-white/60 backdrop-blur-xl border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.04)];
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(200, 169, 106, 0.25);
+    border-radius: 34px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
   }
+  
   .glass-panel-dark {
-    @apply bg-black/30 backdrop-blur-2xl border border-white/10 shadow-[0_16px_64px_rgba(0,0,0,0.2)];
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(200, 169, 106, 0.25);
+    border-radius: 34px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   }
+  
+  .nav-pill {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(200, 169, 106, 0.20);
+    border-radius: 999px;
+  }
+
   .gold-gradient-text {
-    background: linear-gradient(135deg, #C7A45D 0%, #E3C887 100%);
+    background: linear-gradient(135deg, #F5E5B9, #D9C49A, #C8A96A, #B88A2F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .luxury-gradient-bg {
+    background: linear-gradient(135deg, #FFFDF8, #FAF6EF, #F2E7D2);
+  }
+  
+  .premium-shadow {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05), 0 25px 80px rgba(184, 138, 47, 0.15);
   }
 }
