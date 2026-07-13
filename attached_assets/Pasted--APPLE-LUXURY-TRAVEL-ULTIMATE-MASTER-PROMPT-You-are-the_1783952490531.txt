@@ -1,0 +1,521 @@
+# APPLE × LUXURY TRAVEL — ULTIMATE MASTER PROMPT
+
+You are the world's best Product Designer, Creative Director, Apple Human Interface Design expert, Awwwards-winning UI/UX Designer, Motion Designer, Brand Strategist, and Senior Frontend Engineer.
+
+Your mission is to redesign the entire Club Exotica website into the most luxurious travel experience on the internet.
+
+This is **not** a travel agency website.
+
+It is a **Luxury Travel Concierge Platform**.
+
+Every screen should feel handcrafted, timeless, elegant, emotional, and unbelievably premium.
+
+The experience should combine:
+
+* Apple.com
+* iOS 26 Design Language
+* VisionOS spatial interface
+* Aman Resorts
+* Rolls-Royce
+* Bentley
+* Airbnb Luxe
+* Four Seasons
+* Six Senses
+* Aman Private Jet
+* Porsche
+* Leica
+
+The website should look like it cost over **$500,000** to design.
+
+Never create something that resembles a WordPress theme, Bootstrap template, or ordinary travel agency website.
+
+---
+
+# CORE DESIGN PHILOSOPHY
+
+Minimal.
+
+Elegant.
+
+Timeless.
+
+Expensive.
+
+Calm.
+
+Confident.
+
+Editorial.
+
+Cinematic.
+
+Every pixel must feel intentional.
+
+The website should breathe.
+
+Remove everything unnecessary.
+
+Luxury is created through simplicity.
+
+---
+
+# APPLE DESIGN PRINCIPLES
+
+Follow Apple Human Interface Guidelines.
+
+Use extremely clean layouts.
+
+Large rounded corners.
+
+Soft shadows.
+
+Ultra-thin borders.
+
+Beautiful spacing.
+
+Perfect alignment.
+
+Premium typography.
+
+Glass surfaces.
+
+Liquid animations.
+
+Smooth transitions.
+
+Large touch targets.
+
+Consistent spacing.
+
+No visual clutter.
+
+No unnecessary icons.
+
+No loud colors.
+
+No aggressive gradients.
+
+Everything should feel engineered.
+
+---
+
+# DESIGN LANGUAGE
+
+Use large floating cards.
+
+Rounded corners between 28px and 40px.
+
+Large border radius everywhere.
+
+Massive white space.
+
+Floating sections.
+
+Soft elevation.
+
+Glassmorphism only where appropriate.
+
+Subtle transparency.
+
+Soft blur.
+
+Hairline borders.
+
+Very soft ambient shadows.
+
+Every card should appear to float.
+
+---
+
+# COLOR PALETTE
+
+Background
+
+#F5F5F7
+
+Pure White
+
+#FFFFFF
+
+Graphite
+
+#1D1D1F
+
+Luxury Gold
+
+#C7A45D
+
+Soft Gray
+
+#E8E8ED
+
+Warm Beige
+
+#F7F3EE
+
+Avoid bright colors.
+
+Use color only for emphasis.
+
+---
+
+# TYPOGRAPHY
+
+Huge editorial headings.
+
+Elegant serif headlines.
+
+Modern sans-serif body.
+
+Perfect line-height.
+
+Minimal text.
+
+Large headlines.
+
+Tiny supporting copy.
+
+Apple-style typography hierarchy.
+
+---
+
+# HERO
+
+Create a full-screen immersive hero.
+
+Use cinematic 8K travel footage.
+
+Luxury destinations.
+
+Beautiful lighting.
+
+Slow camera movement.
+
+Soft overlays.
+
+Large floating glass content card.
+
+Rounded 40px corners.
+
+Hero Text
+
+The World, Perfectly Curated.
+
+Subtext
+
+Private journeys, iconic destinations, extraordinary experiences.
+
+Primary Button
+
+Begin Your Journey
+
+Secondary Button
+
+Explore Collection
+
+Below the hero create floating destination preview cards.
+
+---
+
+# NAVIGATION
+
+Floating navigation.
+
+Rounded pill container.
+
+Blurred glass.
+
+Floating effect.
+
+Soft shadow.
+
+Large corner radius.
+
+Apple style hover.
+
+Sticky while scrolling.
+
+Animated appearance.
+
+---
+
+# DESTINATION CARDS
+
+Cards should look like iOS widgets.
+
+Large images.
+
+Rounded 36px corners.
+
+Soft glass overlays.
+
+Destination title.
+
+Luxury rating.
+
+Starting price.
+
+Explore button.
+
+Hover
+
+Image zoom.
+
+Soft lighting.
+
+Lift animation.
+
+Shadow grows naturally.
+
+---
+
+# MEMBERSHIP
+
+Replace pricing tables.
+
+Create luxury membership cards.
+
+Large rounded corners.
+
+Glass surface.
+
+Luxury badge.
+
+Gold outline.
+
+Floating appearance.
+
+Animated hover.
+
+Membership comparison with elegant transitions.
+
+---
+
+# EXPERIENCES
+
+Present experiences as immersive stories instead of lists.
+
+Private Island
+
+Luxury Safari
+
+Honeymoon
+
+Northern Lights
+
+Luxury Cruise
+
+Wellness Retreat
+
+Adventure
+
+Family Escape
+
+Each experience should use full-width photography with editorial layouts.
+
+---
+
+# GALLERY
+
+Pinterest-inspired masonry layout.
+
+Large rounded images.
+
+No sharp corners.
+
+Hover animations.
+
+Glass captions.
+
+Lazy loading.
+
+Smooth reveal.
+
+---
+
+# TESTIMONIALS
+
+Apple Card style.
+
+Large rounded cards.
+
+Customer portrait.
+
+Elegant typography.
+
+Minimal layout.
+
+Video testimonials.
+
+Google rating.
+
+Trust badges.
+
+---
+
+# MICRO INTERACTIONS
+
+Every interaction should feel premium.
+
+Buttons gently compress.
+
+Cards softly lift.
+
+Images slowly zoom.
+
+Background subtly shifts.
+
+Cursor lighting.
+
+Glass reflections.
+
+Parallax scrolling.
+
+Smooth page transitions.
+
+Animated number counters.
+
+Nothing should feel rushed.
+
+---
+
+# BUTTONS
+
+Large pill shape.
+
+Rounded 999px.
+
+Soft shadow.
+
+Elegant hover.
+
+Gentle scaling.
+
+Luxury focus ring.
+
+Premium loading state.
+
+---
+
+# FORMS
+
+Large rounded fields.
+
+Minimal borders.
+
+Floating labels.
+
+Soft focus glow.
+
+Glass submit button.
+
+Apple keyboard spacing.
+
+---
+
+# FOOTER
+
+Floating rounded container.
+
+Large spacing.
+
+Minimal links.
+
+Newsletter.
+
+Social icons.
+
+Contact.
+
+Awards.
+
+Copyright.
+
+Luxury layout.
+
+---
+
+# MOBILE
+
+Should feel identical to an iPhone app.
+
+Rounded cards.
+
+Large touch targets.
+
+Smooth gestures.
+
+Floating bottom actions.
+
+Native-quality animations.
+
+Perfect spacing.
+
+---
+
+# ANIMATION
+
+Framer Motion.
+
+Lenis Smooth Scroll.
+
+GSAP only for hero storytelling.
+
+Fade.
+
+Blur.
+
+Scale.
+
+Reveal.
+
+Mask transitions.
+
+Image parallax.
+
+No flashy animations.
+
+Everything should feel calm and luxurious.
+
+---
+
+# DEVELOPMENT
+
+Next.js
+
+React
+
+Tailwind CSS
+
+TypeScript
+
+Framer Motion
+
+Shadcn UI
+
+React Three Fiber (only for subtle effects)
+
+Lenis
+
+Lucide Icons
+
+Responsive.
+
+Accessible.
+
+SEO optimized.
+
+Performance optimized.
+
+---
+
+# QUALITY STANDARD
+
+This website should look like:
+
+* Apple designed a luxury travel platform.
+* Awwwards Site of the Day winner.
+* Premium enough for luxury resorts charging thousands of dollars per night.
+* Modern enough to remain visually timeless for years.
+
+The user should feel that they are entering a private members-only travel club, not browsing a standard travel agency. Every page must communicate exclusivity, refinement, and effortless luxury through exceptional typography, generous spacing, rounded geometry, subtle motion, immersive photography, and a calm, premium visual language.

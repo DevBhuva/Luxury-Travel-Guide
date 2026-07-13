@@ -1,0 +1,188 @@
+Premium Color Palette
+/* Primary Colors */
+Background:        #FAF9F6
+Pure White:        #FFFFFF
+Luxury Gold:       #C8A96A
+Royal Gold:        #B88A2F
+Champagne Gold:    #D9C49A
+Soft Ivory:        #F8F6F2
+
+/* Text */
+Primary Text:      #1A1A1A
+Secondary Text:    #5C5C5C
+Muted Text:        #8A8A8A
+
+/* Borders */
+Border Light:      #EAE6DF
+Border Gold:       #E3D2A5
+
+/* Hover */
+Gold Hover:        #A8791F
+Button Hover:      #9E7420
+
+/* Shadow */
+Shadow: rgba(184,138,47,0.15)
+Hero
+Full-screen luxury travel video
+White navigation
+Transparent glass navbar
+Gold logo
+Gold CTA button
+Large editorial typography
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+             CLUB EXOTICA
+
+        Discover Extraordinary
+          Luxury Journeys
+
+     Curated experiences crafted
+       exclusively for discerning
+             travellers.
+
+      [ Begin Your Journey ]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Button Style
+background: linear-gradient(
+135deg,
+#D9C49A,
+#C8A96A,
+#B88A2F
+);
+
+color: white;
+
+border-radius: 999px;
+
+padding: 18px 38px;
+
+font-weight:600;
+
+box-shadow:
+0 20px 50px rgba(184,138,47,.30);
+Glass Cards
+background:
+rgba(255,255,255,.70);
+
+backdrop-filter:
+blur(30px);
+
+border:
+1px solid rgba(200,169,106,.25);
+
+border-radius:
+34px;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.06);
+Luxury Gradient
+background:
+linear-gradient(
+135deg,
+#FFFDF8,
+#FAF6EF,
+#F2E7D2
+);
+Gold Gradient
+background:
+linear-gradient(
+135deg,
+#F5E5B9,
+#D9C49A,
+#C8A96A,
+#B88A2F
+);
+Premium Typography
+
+Heading
+
+Canela
+Cormorant Garamond
+Playfair Display
+
+Body
+
+SF Pro Display
+Inter
+Manrope
+Rounded Corners
+
+Everything should feel soft and modern.
+
+Cards
+32px
+
+Buttons
+999px
+
+Inputs
+22px
+
+Images
+36px
+
+Sections
+48px
+Card Design
+╭──────────────────────────────╮
+│                              │
+│      Maldives                │
+│                              │
+│ Luxury Water Villas          │
+│                              │
+│ ★★★★★                       │
+│                              │
+│ Starting ₹89,999             │
+│                              │
+│ [ Explore ]                  │
+│                              │
+╰──────────────────────────────╯
+Navbar
+
+Floating pill design.
+
+background:
+rgba(255,255,255,.65);
+
+backdrop-filter:
+blur(30px);
+
+border:
+1px solid rgba(200,169,106,.20);
+
+border-radius:
+999px;
+Premium Shadows
+box-shadow:
+
+0 10px 40px rgba(0,0,0,.05),
+
+0 25px 80px rgba(184,138,47,.15);
+Section Backgrounds
+
+Alternate sections:
+
+White
+
+↓
+
+Ivory
+
+↓
+
+White
+
+↓
+
+Champagne
+
+↓
+
+White
+
+This creates rhythm while keeping the site bright and elegant.
+
+Overall Design Prompt
+
+Create an ultra-premium luxury travel website inspired by Apple's minimalist design philosophy and the elegance of world-class luxury hospitality brands. Use a refined Gold and White color palette with ivory backgrounds, champagne gold accents, soft glassmorphism, large rounded corners (28–40px), generous whitespace, cinematic full-screen travel imagery, editorial typography, floating cards, pill-shaped buttons, subtle shadows, and smooth motion. Avoid clutter, bright colors, and heavy gradients. Every page should feel calm, sophisticated, and exclusive, like a private luxury travel concierge rather than a standard travel agency. Use gold only for key accents, CTAs, icons, and highlights so the interface remains clean, timeless, and luxurious. The final experience should be worthy of an Awwwards-winning website and leave visitors with an immediate impression of trust, elegance, and aspiration.
