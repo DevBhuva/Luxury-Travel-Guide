@@ -7,43 +7,61 @@
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--primary-text);
-  --color-border: var(--border-light);
+  --color-foreground: var(--text-primary);
+  --color-border: var(--border);
   
-  --color-card: var(--pure-white);
-  --color-card-foreground: var(--primary-text);
-  --color-card-border: var(--border-light);
+  --color-card: var(--card);
+  --color-card-foreground: var(--text-primary);
+  --color-card-border: var(--border);
   
-  --color-primary: var(--primary-text);
-  --color-primary-foreground: var(--pure-white);
+  --color-surface: var(--surface);
+  --color-surface-light: var(--surface-light);
 
-  --color-secondary: var(--secondary-text);
-  --color-secondary-foreground: var(--pure-white);
+  --color-primary: var(--gold-primary);
+  --color-primary-foreground: #0B0B0D;
+
+  --color-secondary: var(--text-secondary);
+  --color-secondary-foreground: var(--background);
   
-  --color-muted: var(--soft-ivory);
-  --color-muted-foreground: var(--muted-text);
+  --color-muted: var(--text-muted);
+  --color-muted-foreground: var(--text-muted);
   
-  --color-accent: var(--luxury-gold);
-  --color-accent-foreground: var(--pure-white);
+  --color-accent: var(--gold-primary);
+  --color-accent-foreground: #0B0B0D;
+
+  --color-success: var(--success);
+  --color-danger: var(--danger);
 
   --font-sans: var(--app-font-sans);
   --font-serif: var(--app-font-serif);
 }
 
 :root {
-  --background: #FAF9F6;
+  --background: #0B0B0D;
+  --surface: #121214;
+  --surface-light: #1A1A1D;
+  --card: rgba(255,255,255,0.05);
+
   --pure-white: #FFFFFF;
-  --luxury-gold: #C8A96A;
-  --royal-gold: #B88A2F;
-  --champagne-gold: #D9C49A;
-  --soft-ivory: #F8F6F2;
-  --primary-text: #1A1A1A;
-  --secondary-text: #5C5C5C;
-  --muted-text: #8A8A8A;
-  --border-light: #EAE6DF;
-  --border-gold: #E3D2A5;
-  --gold-hover: #A8791F;
-  --button-hover: #9E7420;
+  --off-white: #F8F8F6;
+  --soft-white: #EFEFEF;
+
+  --gold-primary: #D4AF37;
+  --gold-light: #F2D675;
+  --gold-dark: #A67C00;
+  --champagne: #E6C97A;
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #D8D8D8;
+  --text-muted: #A8A8A8;
+
+  --border: rgba(255,255,255,0.08);
+  --border-gold: rgba(212,175,55,0.35);
+
+  --shadow-gold: rgba(212,175,55,0.20);
+  
+  --success: #34D399;
+  --danger: #EF4444;
 
   --app-font-sans: 'Plus Jakarta Sans', sans-serif;
   --app-font-serif: 'Playfair Display', serif;
@@ -65,39 +83,53 @@
 
 @layer utilities {
   .glass-panel {
-    background: rgba(255, 255, 255, 0.70);
+    background: var(--card);
     backdrop-filter: blur(30px);
-    border: 1px solid rgba(200, 169, 106, 0.25);
+    border: 1px solid var(--border);
     border-radius: 34px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease;
+  }
+
+  .glass-panel:hover {
+    border-color: var(--border-gold);
+    box-shadow: 0 20px 60px var(--shadow-gold);
   }
   
   .glass-panel-dark {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(30px);
-    border: 1px solid rgba(200, 169, 106, 0.25);
+    border: 1px solid var(--border);
     border-radius: 34px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   }
   
   .nav-pill {
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(18, 18, 20, 0.75);
     backdrop-filter: blur(30px);
-    border: 1px solid rgba(200, 169, 106, 0.20);
+    border: 1px solid var(--border);
     border-radius: 999px;
   }
 
   .gold-gradient-text {
-    background: linear-gradient(135deg, #F5E5B9, #D9C49A, #C8A96A, #B88A2F);
+    background: linear-gradient(135deg, var(--champagne), var(--gold-light), var(--gold-primary), var(--gold-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
+  .gold-gradient-bg {
+    background: linear-gradient(135deg, var(--champagne), var(--gold-primary), var(--gold-dark));
+  }
+  
   .luxury-gradient-bg {
-    background: linear-gradient(135deg, #FFFDF8, #FAF6EF, #F2E7D2);
+    background: linear-gradient(135deg, var(--surface), var(--surface-light), var(--background));
   }
   
   .premium-shadow {
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05), 0 25px 80px rgba(184, 138, 47, 0.15);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 25px 80px rgba(0, 0, 0, 0.4);
+  }
+
+  .premium-shadow-hover:hover {
+    box-shadow: 0 10px 40px var(--shadow-gold), 0 25px 80px var(--shadow-gold);
   }
 }

@@ -26,10 +26,10 @@ const stories = [
 
 export function Experiences() {
   return (
-    <section id="experiences" className="py-32 px-4 md:px-8 bg-muted max-w-7xl mx-auto rounded-[48px] my-10">
+    <section id="experiences" className="py-32 px-4 md:px-8 bg-surface-light max-w-7xl mx-auto rounded-[48px] my-10 border border-border">
       <div className="mb-24 text-center">
-        <h2 className="font-serif text-4xl md:text-6xl text-primary mb-6">Curated Escapes</h2>
-        <p className="text-muted-foreground font-light tracking-wide max-w-xl mx-auto">
+        <h2 className="font-serif text-4xl md:text-6xl text-foreground mb-6">Curated Escapes</h2>
+        <p className="text-secondary font-light tracking-wide max-w-xl mx-auto">
           We do not sell trips. We design narratives, tailored entirely to your rhythm.
         </p>
       </div>
@@ -61,18 +61,18 @@ export function Experiences() {
                 transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                 className="w-full md:w-2/5 max-w-md"
               >
-                <span className="text-accent text-xs font-semibold uppercase tracking-[0.2em] mb-4 block">
+                <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em] mb-4 block">
                   {story.category}
                 </span>
-                <h3 className="font-serif text-3xl md:text-5xl text-primary mb-6 leading-tight">
+                <h3 className="font-serif text-3xl md:text-5xl text-foreground mb-6 leading-tight">
                   {story.title}
                 </h3>
                 <p className="text-secondary font-light leading-relaxed mb-8">
                   {story.text}
                 </p>
-                <button className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.1em] text-primary hover:text-accent transition-colors group">
+                <button className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.1em] text-foreground hover:text-primary transition-colors group">
                   Discover
-                  <span className="w-8 h-[1px] bg-primary group-hover:bg-accent group-hover:w-12 transition-all duration-300 block" />
+                  <span className="w-8 h-[1px] bg-foreground group-hover:bg-primary group-hover:w-12 transition-all duration-300 block" />
                 </button>
               </motion.div>
 

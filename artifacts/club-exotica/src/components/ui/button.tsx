@@ -9,14 +9,14 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-[linear-gradient(135deg,#D9C49A,#C8A96A,#B88A2F)] text-white shadow-[0_20px_50px_rgba(184,138,47,0.30)] hover:scale-[1.02] hover:bg-[linear-gradient(135deg,#C8A96A,#B88A2F,#9E7420)]',
+          'bg-[linear-gradient(135deg,var(--champagne),var(--gold-primary),var(--gold-dark))] text-[#0B0B0D] shadow-[0_20px_50px_var(--shadow-gold)] hover:scale-[1.02] hover:bg-[linear-gradient(135deg,var(--gold-primary),var(--gold-dark),var(--gold-dark))]',
         destructive:
-          'bg-destructive text-destructive-foreground shadow-sm border-destructive-border',
+          'bg-danger text-white shadow-sm border-danger',
         outline:
-          'border border-[#E3D2A5] bg-transparent shadow-[0_10px_40px_rgba(0,0,0,0.05),_0_25px_80px_rgba(184,138,47,0.15)] hover:border-[#C8A96A] hover:text-[#C8A96A]',
+          'border border-white/20 bg-transparent text-white shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:border-white/50 hover:bg-white/5',
         secondary:
-          'border bg-[#F8F6F2] text-[#1A1A1A] border border-[#EAE6DF] hover:border-[#E3D2A5]',
-        ghost: 'border border-transparent hover:text-[#C8A96A]',
+          'border bg-surface text-foreground border border-border hover:border-[var(--border-gold)]',
+        ghost: 'border border-transparent hover:text-primary',
         link: 'text-primary underline-offset-4 hover:underline',
       },
       size: {

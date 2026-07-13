@@ -13,7 +13,7 @@ const images = [
 
 export function Gallery() {
   return (
-    <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto bg-white rounded-[48px] my-10">
+    <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto bg-surface rounded-[48px] my-10 border border-border">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ export function Gallery() {
         transition={{ duration: 1 }}
         className="mb-16 text-center"
       >
-        <h2 className="font-serif text-4xl text-primary">Moments</h2>
+        <h2 className="font-serif text-4xl text-foreground">Moments</h2>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-3 gap-4 md:gap-6 md:h-[800px] px-4 md:px-10 pb-10">
@@ -32,16 +32,16 @@ export function Gallery() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ delay: i * 0.15, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className={`group relative rounded-[36px] overflow-hidden premium-shadow ${img.span}`}
+            className={`group relative rounded-[36px] overflow-hidden premium-shadow premium-shadow-hover ${img.span} border border-border`}
           >
             <img 
               src={img.src} 
               alt={img.alt} 
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[2s] ease-out"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-              <span className="text-white font-medium tracking-wide bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute bottom-6 left-6 opacity-80 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+              <span className="text-white font-medium tracking-wide bg-surface/50 backdrop-blur-md px-4 py-2 rounded-full text-sm border border-border">
                 {img.label}
               </span>
             </div>
