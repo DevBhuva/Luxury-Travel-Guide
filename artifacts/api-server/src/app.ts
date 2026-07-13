@@ -1,8 +1,16 @@
 import express, { type Express } from "express";
 import cors from "cors";
-import pinoHttp from "pino-http";
+import { createRequire } from "module";
+import type { Options as PinoHttpOptions, HttpLogger } from "pino-http";
 import router from "./routes";
 import { logger } from "./lib/logger";
+
+// pino-http@10 has no `exports` field in package.json (only `main`), which
+// makes its default export unresolvable under TypeScript's bundler moduleResolution.
+// We use createRequire for the runtime value and a type-only import for types +
+// module augmentations (IncomingMessage.id, etc.). esbuild handles CJS interop at build time.
+const _require = createRequire(import.meta.url);
+const pinoHttp = _require("pino-http") as (opts?: PinoHttpOptions) => HttpLogger;
 
 const app: Express = express();
 
