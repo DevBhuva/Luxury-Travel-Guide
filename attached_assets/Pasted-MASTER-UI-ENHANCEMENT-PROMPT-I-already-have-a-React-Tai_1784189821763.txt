@@ -1,0 +1,909 @@
+MASTER UI ENHANCEMENT PROMPT
+
+
+
+I already have a React + Tailwind CSS travel website.
+
+
+
+DO NOT CHANGE MY EXISTING THEME.
+
+
+
+
+
+I only want to add premium animations, interactions, section effects and modern UI inspired by Travlla and Gotur.
+
+
+
+Website Structure
+
+
+
+Navbar
+
+
+
+Home
+
+About
+
+Destinations
+
+Travel Blog
+
+Contact Us
+
+Pay Now (Gold CTA Button)
+
+
+
+Do not add extra menu items.
+
+
+
+Navbar
+
+
+
+Create a floating premium navbar.
+
+
+
+Requirements
+
+
+
+Glassmorphism
+
+Blur background
+
+Thin gold border
+
+Rounded 999px pill shape
+
+Shrinks on scroll
+
+Smooth fade
+
+Active page indicator
+
+Animated underline
+
+Hover glow
+
+Gold ripple on click
+
+Mobile drawer animation
+
+
+
+Pay Now button
+
+
+
+Gold gradient
+
+Soft glow
+
+Scale on hover
+
+Premium shine animation
+
+Hero Section
+
+
+
+Use full screen.
+
+
+
+Background
+
+
+
+Luxury vacation image
+
+
+
+Dark overlay
+
+
+
+Black overlay 70%
+
+
+
+Additional gradient overlay
+
+
+
+Soft vignette
+
+
+
+Very subtle moving particles
+
+
+
+Parallax image movement
+
+
+
+Content animations
+
+
+
+Headline fades upward
+
+
+
+Subtitle
+
+
+
+Buttons
+
+
+
+Scroll indicator
+
+
+
+Floating travel badge
+
+
+
+Animated destination cards
+
+
+
+Glass cards
+
+
+
+Luxury shadows
+
+
+
+Every Section Background
+
+
+
+Every section must contain
+
+
+
+Luxury destination image
+
+
+
+Different image for each section
+
+
+
+Then apply
+
+
+
+Dark gradient
+
+
+
+70% black overlay
+
+
+
+Very subtle gold overlay
+
+
+
+Image must never overpower text.
+
+
+
+The website should always look dark.
+
+
+
+Section Entrance Animation
+
+
+
+Each section
+
+
+
+Fade in
+
+
+
+Move upward
+
+
+
+Stagger children
+
+
+
+Cards appear one after another
+
+
+
+Duration
+
+
+
+700ms
+
+
+
+Smooth easing
+
+
+
+Cards
+
+
+
+Every card should have
+
+
+
+Large border radius
+
+
+
+Glass background
+
+
+
+Blur
+
+
+
+Luxury shadow
+
+
+
+Gold border on hover
+
+
+
+Image zoom
+
+
+
+Overlay animation
+
+
+
+Arrow animation
+
+
+
+Button animation
+
+
+
+Image Effects
+
+
+
+Every image should have
+
+
+
+Zoom on hover
+
+
+
+Parallax
+
+
+
+Rounded corners
+
+
+
+Luxury shadows
+
+
+
+Gradient overlay
+
+
+
+Dark overlay
+
+
+
+Very subtle floating movement
+
+
+
+Destination Cards
+
+
+
+Premium hover
+
+
+
+Image zoom
+
+
+
+Title slides upward
+
+
+
+Button appears
+
+
+
+Location badge
+
+
+
+Price badge
+
+
+
+Luxury border animation
+
+
+
+Shadow becomes stronger
+
+
+
+About Section
+
+
+
+Luxury split layout
+
+
+
+Image
+
+
+
+Floating experience badge
+
+
+
+Travel statistics
+
+
+
+Animated counters
+
+
+
+Small decorative gold lines
+
+
+
+Image moves slowly
+
+
+
+Destinations
+
+
+
+Masonry style
+
+
+
+Large rounded cards
+
+
+
+Luxury hover
+
+
+
+Animated filters
+
+
+
+Card scaling
+
+
+
+Glass overlay
+
+
+
+Blog Section
+
+
+
+Luxury cards
+
+
+
+Large images
+
+
+
+Rounded
+
+
+
+Category badge
+
+
+
+Reading time
+
+
+
+Date
+
+
+
+Animated hover
+
+
+
+Button slides
+
+
+
+Image zoom
+
+
+
+Testimonials
+
+
+
+Glass cards
+
+
+
+Customer image
+
+
+
+Luxury quote icon
+
+
+
+Auto slider
+
+
+
+Smooth transitions
+
+
+
+Scale active card
+
+
+
+Gold rating stars
+
+
+
+CTA Section
+
+
+
+Large vacation background
+
+
+
+Black overlay
+
+
+
+Gold glow
+
+
+
+Luxury typography
+
+
+
+Animated button
+
+
+
+Floating decorative circles
+
+
+
+Contact Section
+
+
+
+Luxury contact form
+
+
+
+Glass inputs
+
+
+
+Rounded fields
+
+
+
+Animated focus
+
+
+
+Gold cursor
+
+
+
+Map card
+
+
+
+Floating contact information
+
+
+
+Footer
+
+
+
+Luxury dark footer
+
+
+
+Destination links
+
+
+
+Newsletter
+
+
+
+Social icons
+
+
+
+Luxury hover
+
+
+
+Animated separator
+
+
+
+Gold gradient line
+
+
+
+Cursor Effects
+
+
+
+Create custom cursor
+
+
+
+Small gold dot
+
+
+
+Outer ring
+
+
+
+Hover scale
+
+
+
+Button magnetic effect
+
+
+
+Scroll Effects
+
+
+
+Smooth scrolling
+
+
+
+Scroll progress bar
+
+
+
+Reveal animations
+
+
+
+Parallax
+
+
+
+Image movement
+
+
+
+Floating icons
+
+
+
+Sticky elements
+
+
+
+Micro Animations
+
+
+
+Buttons
+
+
+
+Ripple
+
+
+
+Glow
+
+
+
+Scale
+
+
+
+Cards
+
+
+
+Lift
+
+
+
+Border animation
+
+
+
+Images
+
+
+
+Zoom
+
+
+
+Text
+
+
+
+Fade
+
+
+
+Slide
+
+
+
+Icons
+
+
+
+Rotate
+
+
+
+Links
+
+
+
+Animated underline
+
+
+
+Premium UI
+
+
+
+Glass panels
+
+
+
+Backdrop blur
+
+
+
+Soft gradients
+
+
+
+Luxury shadows
+
+
+
+Floating cards
+
+
+
+Apple inspired spacing
+
+
+
+High-end white space
+
+
+
+Minimal but premium
+
+
+
+Colors
+
+
+
+Background
+
+
+
+#090909
+
+
+
+Card
+
+
+
+#111111
+
+
+
+Border
+
+
+
+rgba(212,175,55,.25)
+
+
+
+Primary Gold
+
+
+
+#D4AF37
+
+
+
+Hover Gold
+
+
+
+#F3D67A
+
+
+
+Text
+
+
+
+White
+
+
+
+Secondary Text
+
+
+
+#CFCFCF
+
+
+
+Border Radius
+
+
+
+Cards
+
+
+
+32px
+
+
+
+Buttons
+
+
+
+999px
+
+
+
+Sections
+
+
+
+40px
+
+
+
+Images
+
+
+
+28px
+
+
+
+Animations
+
+
+
+Use Framer Motion
+
+
+
+whileHover
+
+
+
+whileTap
+
+
+
+viewport animations
+
+
+
+Stagger
+
+
+
+Spring
+
+
+
+Smooth easing
+
+
+
+Parallax
+
+
+
+Performance
+
+
+
+Lazy load images
+
+
+
+GPU animations
+
+
+
+Intersection Observer
+
+
+
+Image optimization
+
+
+
+No layout shifts
+
+
+
+60 FPS animations
+
+
+
+Final Goal
+
+
+
+The website should feel like a luxury travel brand, combining the elegance of Apple, the smooth interactions of modern premium SaaS websites, and the immersive travel visuals of Travlla and Gotur, while keeping my existing black, gold, and white branding unchanged. The first impression should immediately communicate exclusivity, premium vacations, and trust, with every section featuring cinematic destination imagery under dark overlays, refined animations, glassmorphism, and polished micro-interactions.

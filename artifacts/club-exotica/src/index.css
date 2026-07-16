@@ -86,6 +86,21 @@
   to   { transform: scale(1.07); }
 }
 
+@keyframes btnShine {
+  0%   { transform: translateX(-120%) skewX(-20deg); }
+  100% { transform: translateX(220%)  skewX(-20deg); }
+}
+
+@keyframes ripple {
+  0%   { transform: scale(0);   opacity: 0.5; }
+  100% { transform: scale(4);   opacity: 0; }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
 @layer utilities {
   /* ── Section background ────────────────────────────────────── */
   .section-bg-img {
@@ -187,4 +202,48 @@
   .premium-shadow-hover:hover {
     box-shadow: 0 10px 40px var(--shadow-gold), 0 25px 80px var(--shadow-gold);
   }
+
+  /* ── Button shine sweep ──────────────────────────────────────── */
+  .btn-shine::after {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0;
+    width: 40%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,0.28),
+      transparent
+    );
+    transform: translateX(-120%) skewX(-20deg);
+  }
+
+  .btn-shine:hover::after {
+    animation: btnShine 0.75s ease forwards;
+  }
+
+  /* ── Custom cursor ───────────────────────────────────────────── */
+  body:has(.custom-cursor-active) * {
+    cursor: none !important;
+  }
+
+  /* ── Float utility ───────────────────────────────────────────── */
+  .float-anim {
+    animation: floatY 5s ease-in-out infinite;
+  }
+
+  /* ── Link animated underline ─────────────────────────────────── */
+  .link-underline {
+    position: relative;
+  }
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0; height: 1px;
+    background: var(--gold-primary);
+    transition: width 0.3s ease;
+  }
+  .link-underline:hover::after { width: 100%; }
 }
