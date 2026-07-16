@@ -1,0 +1,206 @@
+Luxury Background Design Prompt
+
+Create a world-class luxury travel website where every section on every page has its own premium travel destination background instead of plain colors.
+
+Background Style
+Every section must use a high-resolution luxury travel image relevant to its content.
+Images should include:
+Maldives overwater villas
+Santorini, Greece
+Swiss Alps
+Dubai skyline
+Bali resorts
+Paris landmarks
+Tuscany countryside
+Tropical beaches
+Luxury cruises
+Snow mountains
+Dense forests
+Desert landscapes
+Luxury hotels
+Airplanes
+Private islands
+Adventure destinations
+
+Never reuse the same image in consecutive sections.
+
+Dark Premium Overlay
+
+Every background image must have a black overlay above it.
+
+Requirements:
+
+Overlay Color:
+
+rgba(0,0,0,0.70)
+Approximately 70% opacity.
+
+The overlay must:
+
+Improve text readability
+Keep the destination visible
+Create depth
+Feel cinematic
+Never look flat
+
+Example:
+
+background:
+linear-gradient(
+rgba(0,0,0,0.70),
+rgba(0,0,0,0.70)
+),
+url(...);
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+Add Depth
+
+Each section should also include:
+
+soft radial gradients
+subtle vignette effect
+slight image scaling (105%)
+very light blur only where necessary
+elegant dark edges
+
+Example:
+
+background:
+linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)),
+radial-gradient(circle at top, rgba(255,215,0,.08), transparent 60%),
+url(...);
+Glass Layer
+
+Content must never sit directly on the image.
+
+Place all cards and content inside premium glass containers.
+
+background: rgba(0,0,0,.45);
+
+backdrop-filter: blur(18px);
+
+border: 1px solid rgba(255,255,255,.08);
+
+border-radius: 28px;
+Section Variation
+
+Every section should have a different destination.
+
+Example:
+
+Hero
+→ Maldives Sunset
+
+About
+→ Swiss Mountains
+
+Destinations
+→ Santorini
+
+Packages
+→ Bali Resort
+
+Services
+→ Dubai Skyline
+
+Testimonials
+→ Northern Lights
+
+Gallery
+→ Tropical Island
+
+Blogs
+→ Tuscany
+
+Contact
+→ Luxury Resort Lobby
+
+Footer
+→ Night City Skyline
+
+Smooth Transition
+
+Between sections create seamless transitions.
+
+Do NOT abruptly switch images.
+
+Instead use:
+
+fade gradients
+overlapping shadows
+soft separators
+subtle blur transitions
+
+Sections should feel connected like one premium experience.
+
+Premium Feel
+
+The overall website should feel like:
+
+Aman Resorts
+Four Seasons
+Ritz-Carlton
+Apple
+Airbnb Luxe
+
+Luxury, minimal, sophisticated, and modern.
+
+Avoid clutter.
+
+Color Palette
+
+Primary Background
+
+#000000
+
+Secondary Background
+
+#0A0A0A
+
+Gold Accent
+
+#D4AF37
+
+Warm Gold Hover
+
+#F2C94C
+
+Text
+
+#FFFFFF
+
+Secondary Text
+
+rgba(255,255,255,0.75)
+
+Borders
+
+rgba(255,255,255,0.08)
+Image Quality
+
+Use only:
+
+Ultra HD (4K or higher)
+Professional travel photography
+Cinematic lighting
+Golden hour
+Luxury hotels and resorts
+Premium vacation destinations
+No stock-photo look
+No pixelation
+No oversaturated colors
+Natural color grading
+Animation
+
+Backgrounds should feel alive but elegant:
+
+Slow zoom (scale: 1 → 1.05 over 20–30 seconds)
+Gentle parallax on scroll
+Smooth fade-in when sections appear
+Soft image crossfades where appropriate
+No distracting motion
+Final Goal
+
+Every section should immediately evoke the feeling of traveling to an exclusive destination. The travel imagery should remain visible through a consistent 70% black overlay, ensuring excellent readability while creating a luxurious, cinematic atmosphere. The result should look premium, immersive, and polished, with each section seamlessly flowing into the next rather than feeling like isolated blocks.

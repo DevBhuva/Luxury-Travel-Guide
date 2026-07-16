@@ -81,13 +81,66 @@
   }
 }
 
+@keyframes slowZoom {
+  from { transform: scale(1);    }
+  to   { transform: scale(1.07); }
+}
+
 @layer utilities {
+  /* ── Section background ────────────────────────────────────── */
+  .section-bg-img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slowZoom 28s ease-in-out infinite alternate;
+    will-change: transform;
+  }
+
+  /* cinematic dark overlay + subtle gold radial bloom */
+  .section-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)),
+      radial-gradient(ellipse at 50% 0%, rgba(212,175,55,0.07) 0%, transparent 65%);
+  }
+
+  /* vignette: dark edges, bright centre */
+  .section-vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, transparent 35%, rgba(0,0,0,0.55) 100%);
+    pointer-events: none;
+  }
+
+  /* fade bridges between sections */
+  .fade-top {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 10rem;
+    background: linear-gradient(to bottom, #000 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .fade-bottom {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 10rem;
+    background: linear-gradient(to top, #000 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  /* ── Glass content containers ──────────────────────────────── */
   .glass-panel {
-    background: var(--card);
-    backdrop-filter: blur(30px);
-    border: 1px solid var(--border);
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.08);
     border-radius: 34px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease;
   }
 
@@ -97,13 +150,14 @@
   }
   
   .glass-panel-dark {
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(30px);
-    border: 1px solid var(--border);
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border: 1px solid rgba(255,255,255,0.08);
     border-radius: 34px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
   }
-  
+
   .nav-pill {
     background: rgba(18, 18, 20, 0.75);
     backdrop-filter: blur(30px);
@@ -111,6 +165,7 @@
     border-radius: 999px;
   }
 
+  /* ── Typography helpers ────────────────────────────────────── */
   .gold-gradient-text {
     background: linear-gradient(135deg, var(--champagne), var(--gold-light), var(--gold-primary), var(--gold-dark));
     -webkit-background-clip: text;

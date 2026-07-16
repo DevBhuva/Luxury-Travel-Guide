@@ -24,61 +24,82 @@ const stories = [
   }
 ];
 
+const ALPS_BG = 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1920&q=80';
+
 export function Experiences() {
   return (
-    <section id="experiences" className="py-32 px-4 md:px-8 bg-surface-light max-w-7xl mx-auto rounded-[48px] my-10 border border-border">
-      <div className="mb-24 text-center">
-        <h2 className="font-serif text-4xl md:text-6xl text-foreground mb-6">Curated Escapes</h2>
-        <p className="text-secondary font-light tracking-wide max-w-xl mx-auto">
-          We do not sell trips. We design narratives, tailored entirely to your rhythm.
-        </p>
+    <section id="experiences" className="relative w-full overflow-hidden py-36 px-4 md:px-8 bg-black">
+      {/* Swiss Alps background */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="section-bg-img" style={{ backgroundImage: `url('${ALPS_BG}')` }} />
+        <div className="section-overlay" />
+        <div className="section-vignette" />
+        <div className="fade-top" />
+        <div className="fade-bottom" />
       </div>
 
-      <div className="space-y-32">
-        {stories.map((story, i) => {
-          const isEven = i % 2 === 0;
-          return (
-            <div key={story.title} className={`flex flex-col md:flex-row items-center gap-12 lg:gap-24 ${isEven ? '' : 'md:flex-row-reverse'}`}>
-              
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                className="w-full md:w-3/5 rounded-[36px] overflow-hidden premium-shadow aspect-[4/3] md:aspect-auto md:h-[600px]"
-              >
-                <img 
-                  src={story.image} 
-                  alt={story.title} 
-                  className="w-full h-full object-cover"
-                />
-              </motion.div>
+      <div className="relative z-10 max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-24 text-center"
+        >
+          <span className="text-xs uppercase tracking-[0.3em] gold-gradient-text font-semibold mb-4 block">Serengeti · Himalayas · Arctic</span>
+          <h2 className="font-serif text-4xl md:text-6xl text-white mb-6">Curated Escapes</h2>
+          <p className="text-white/70 font-light tracking-wide max-w-xl mx-auto">
+            We do not sell trips. We design narratives, tailored entirely to your rhythm.
+          </p>
+        </motion.div>
 
-              <motion.div 
-                initial={{ opacity: 0, x: isEven ? 40 : -40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                className="w-full md:w-2/5 max-w-md"
+        <div className="space-y-24">
+          {stories.map((story, i) => {
+            const isEven = i % 2 === 0;
+            return (
+              <motion.div
+                key={story.title}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+                className={`flex flex-col md:flex-row items-center gap-10 lg:gap-16 ${isEven ? '' : 'md:flex-row-reverse'}`}
               >
-                <span className="text-primary text-xs font-semibold uppercase tracking-[0.2em] mb-4 block">
-                  {story.category}
-                </span>
-                <h3 className="font-serif text-3xl md:text-5xl text-foreground mb-6 leading-tight">
-                  {story.title}
-                </h3>
-                <p className="text-secondary font-light leading-relaxed mb-8">
-                  {story.text}
-                </p>
-                <button className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.1em] text-foreground hover:text-primary transition-colors group">
-                  Discover
-                  <span className="w-8 h-[1px] bg-foreground group-hover:bg-primary group-hover:w-12 transition-all duration-300 block" />
-                </button>
-              </motion.div>
+                <div className="w-full md:w-3/5 rounded-[36px] overflow-hidden premium-shadow aspect-[4/3] md:aspect-auto md:h-[520px]">
+                  <img
+                    src={story.image}
+                    alt={story.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-[2s] ease-out"
+                  />
+                </div>
 
-            </div>
-          )
-        })}
+                <motion.div
+                  initial={{ opacity: 0, x: isEven ? 40 : -40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                  className="w-full md:w-2/5"
+                >
+                  <div className="glass-panel p-8 md:p-10">
+                    <span className="text-[var(--gold-light)] text-xs font-semibold uppercase tracking-[0.2em] mb-4 block">
+                      {story.category}
+                    </span>
+                    <h3 className="font-serif text-3xl md:text-4xl text-white mb-5 leading-tight">
+                      {story.title}
+                    </h3>
+                    <p className="text-white/65 font-light leading-relaxed mb-8 text-sm md:text-base">
+                      {story.text}
+                    </p>
+                    <button className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.15em] text-white/80 hover:text-[var(--gold-light)] transition-colors group">
+                      Discover
+                      <span className="w-8 h-px bg-white/40 group-hover:bg-[var(--gold-light)] group-hover:w-14 transition-all duration-300 block" />
+                    </button>
+                  </div>
+                </motion.div>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
